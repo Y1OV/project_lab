@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 # HTML-код для логотипа
 html_code = '''
 <div style="text-align: center;">
-    <a href="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png">
-        <img src="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png" alt="Foo" style="width: 50%; height: auto;">
+    <a href="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png">
+        <img src="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png" alt="Foo" style="width: 50%; height: auto;">
     </a>
 </div>
 '''
