@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_antd_components as sac
-from pages_ import pages
+from pages import pages
 
 
 def main() -> None:
