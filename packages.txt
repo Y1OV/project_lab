@@ -4,4 +4,4 @@ plotly.express
 plotly
 wordcloud
 matplotlib
-streamlit-antd-components
+
