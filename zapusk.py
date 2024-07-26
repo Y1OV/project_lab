@@ -20,3 +20,7 @@ def main() -> None:
     with st.container():
         if menu in pages:
             pages[menu].method()
+
+
+if __name__ == "__main__":
+    main()
