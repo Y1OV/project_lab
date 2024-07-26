@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit_and_components as sac
+import streamlit_antd_components as sac
 from pages_ import pages
 
 
