@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_antd_components as sac
-from pages import pages
+from pages_ import pages
 
 def main() -> None:
     if 'index' not in st.session_state:
