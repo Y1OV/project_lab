@@ -3,4 +3,4 @@ pandas
 plotly.express
 plotly
 wordcloud
-matplotlib.pyplot
+matplotlib
