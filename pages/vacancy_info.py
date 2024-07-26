@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 # HTML-код для логотипа
 html_code = '''
 <div style="text-align: center;">
-    <a href="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png">
-        <img src="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png" alt="Foo" style="width: 50%; height: auto;">
+    <a href="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png">
+        <img src="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png" alt="Foo" style="width: 50%; height: auto;">
     </a>
 </div>
 '''
@@ -21,7 +21,7 @@ def main():
     tab2, tab5 = st.tabs(["Категории вакансий", "Навыки"])
     
     with tab2:
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_vacancy.csv'  # Замените на путь к вашему файлу
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_vacancy.csv'  # Замените на путь к вашему файлу
         data = pd.read_csv(file_path)
 
         # Классификация профессиональных сфер
@@ -57,7 +57,7 @@ def main():
 
     with tab5:
         st.title('Анализ профессиональных навыков')
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_vacancy.csv'
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_vacancy.csv'
 
         data = pd.read_csv(file_path)
 
