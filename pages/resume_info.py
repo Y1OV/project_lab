@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 # HTML-код для логотипа
 html_code = '''
 <div style="text-align: center;">
-    <a href="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png">
-        <img src="https://raw.githubusercontent.com/Y1OV/DFO_front/main/lct/rosatom-logo-brandlogos.net.png" alt="Foo" style="width: 50%; height: auto;">
+    <a href="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png">
+        <img src="https://raw.githubusercontent.com/Y1OV/project_lab/main/data/ranepa.png" alt="Foo" style="width: 50%; height: auto;">
     </a>
 </div>
 '''
@@ -34,7 +34,7 @@ def main():
 
         st.title('Анализ зарплатных данных')
 
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_resume.csv'
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_resume.csv'
         data = pd.read_csv(file_path)
 
         chart_type = st.selectbox(
@@ -69,7 +69,7 @@ def main():
     
     with tab2:
 
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_resume.csv'
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_resume.csv'
         data = pd.read_csv(file_path)
         data = data[data['positionName'].apply(lambda x: not isinstance(x, float))]
         # Приведение всех значений должностей к нижнему регистру
@@ -140,7 +140,7 @@ def main():
             st.plotly_chart(fig)
 
     with tab3:
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_resume.csv'
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_resume.csv'
         data = pd.read_csv(file_path)
 
         # Удаление всех значений типа float из колонки educationList
@@ -209,7 +209,7 @@ def main():
             st.plotly_chart(fig)
 
     with tab4:
-        file_path = '/Users/y1ov/Work/project_lab/processed_data_resume.csv'
+        file_path = 'https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_resume.csv'
         data = pd.read_csv(file_path)
 
         # Удаление всех значений типа float из колонки workExperienceList
@@ -297,7 +297,7 @@ def main():
 
     with tab5:
 
-        data = pd.read_csv('/Users/y1ov/Work/project_lab/processed_data_resume.csv')
+        data = pd.read_csv('https://raw.githubusercontent.com/Y1OV/project_lab/main/data/processed_data_resume.csv')
 
 
         # Извлечение и обработка данных для hardSkills
