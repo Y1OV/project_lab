@@ -21,7 +21,7 @@ def main():
 
     st.markdown(html_code, unsafe_allow_html=True)
 
-    text = "1) Основная почиташка  - MAIN\n2) Визулизашка по резюме - resume info\n3) Визулизашка по вакансиям - vacancy info"
+    text = "1) Основная почиташка  - MAIN\n2) Визуализашка по резюме - resume info\n3) Визуализашка по вакансиям - vacancy info"
     st.text_area("Что можно найти на этом streamlit-е?", text)
 
     tab1, tab2 = st.tabs(["Почиташка", "Тут тоже что-то будет"])
