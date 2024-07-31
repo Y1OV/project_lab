@@ -263,11 +263,13 @@ def main():
     Example: host=hh.ru  
     Доменное имя сайта (см. Выбор сайта).
     """)
+
+
     data = {
-    "accept_handicapped": false,
-    "accept_incomplete_resumes": false,
-    "accept_kids": false,
-    "accept_temporary": false,
+    "accept_handicapped": False,
+    "accept_incomplete_resumes": False,
+    "accept_kids": False,
+    "accept_temporary": False,
     "address": {
         "building": "9с10",
         "city": "Москва",
@@ -277,11 +279,11 @@ def main():
         "metro_stations": [],
         "street": "улица Годовикова"
     },
-    "allow_messages": true,
+    "allow_messages": True,
     "alternate_url": "https://hh.ru/vacancy/8331228",
     "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=8331228",
-    "approved": false,
-    "archived": false,
+    "approved": False,
+    "archived": False,
     "area": {
         "id": "1",
         "name": "Москва",
@@ -296,7 +298,7 @@ def main():
         "id": "1",
         "name": "test"
     },
-    "can_upgrade_billing_type": true,
+    "can_upgrade_billing_type": True,
     "code": "HRR-3487",
     "contacts": {
         "email": "user@example.com",
@@ -312,11 +314,11 @@ def main():
     "driver_license_types": [{}, {}],
     "employer": {
         "alternate_url": "https://hh.ru/employer/1455",
-        "blacklisted": false,
+        "blacklisted": False,
         "id": "1455",
         "logo_urls": {},
         "name": "HeadHunter",
-        "trusted": true,
+        "trusted": True,
         "url": "https://api.hh.ru/employers/1455"
     },
     "employment": {
@@ -328,8 +330,8 @@ def main():
         "name": "От 1 года до 3 лет"
     },
     "expires_at": "2013-08-08T16:17:21+0400",
-    "has_test": true,
-    "hidden": false,
+    "has_test": True,
+    "hidden": False,
     "id": "8331228",
     "initial_created_at": "2013-06-08T16:17:21+0400",
     "insider_interview": {
@@ -342,17 +344,17 @@ def main():
         "id": "1"
     },
     "name": "Секретарь",
-    "premium": true,
+    "premium": True,
     "previous_id": "123456",
     "professional_roles": [{}],
     "published_at": "2013-07-08T16:17:21+0400",
-    "response_letter_required": true,
-    "response_notifications": true,
+    "response_letter_required": True,
+    "response_notifications": True,
     "response_url": None,
     "salary": {
         "currency": "RUR",
         "from": 30000,
-        "gross": true,
+        "gross": True,
         "to": None
     },
     "schedule": {
@@ -360,7 +362,7 @@ def main():
         "name": "Полный день"
     },
     "test": {
-        "required": false
+        "required": False
     },
     "type": {
         "id": "open",
