@@ -263,8 +263,127 @@ def main():
     Example: host=hh.ru  
     Доменное имя сайта (см. Выбор сайта).
     """)
+    data = {
+    "accept_handicapped": false,
+    "accept_incomplete_resumes": false,
+    "accept_kids": false,
+    "accept_temporary": false,
+    "address": {
+        "building": "9с10",
+        "city": "Москва",
+        "description": "На проходной потребуется паспорт",
+        "lat": 55.807794,
+        "lng": 37.638699,
+        "metro_stations": [],
+        "street": "улица Годовикова"
+    },
+    "allow_messages": true,
+    "alternate_url": "https://hh.ru/vacancy/8331228",
+    "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=8331228",
+    "approved": false,
+    "archived": false,
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "billing_type": {
+        "id": "standard",
+        "name": "Стандарт"
+    },
+    "branded_description": "<style>...</style><div>...</div><script></script>",
+    "branded_template": {
+        "id": "1",
+        "name": "test"
+    },
+    "can_upgrade_billing_type": true,
+    "code": "HRR-3487",
+    "contacts": {
+        "email": "user@example.com",
+        "name": "Имя",
+        "phones": []
+    },
+    "created_at": "2013-07-08T16:17:21+0400",
+    "department": {
+        "id": "HH-1455-TECH",
+        "name": "HeadHunter::Технический департамент"
+    },
+    "description": "Работа хороша",
+    "driver_license_types": [{}, {}],
+    "employer": {
+        "alternate_url": "https://hh.ru/employer/1455",
+        "blacklisted": false,
+        "id": "1455",
+        "logo_urls": {},
+        "name": "HeadHunter",
+        "trusted": true,
+        "url": "https://api.hh.ru/employers/1455"
+    },
+    "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+    },
+    "experience": {
+        "id": "between1And3",
+        "name": "От 1 года до 3 лет"
+    },
+    "expires_at": "2013-08-08T16:17:21+0400",
+    "has_test": true,
+    "hidden": false,
+    "id": "8331228",
+    "initial_created_at": "2013-06-08T16:17:21+0400",
+    "insider_interview": {
+        "id": "12345",
+        "url": "https://hh.ru/interview/12345?employerId=777"
+    },
+    "key_skills": [{}, {}],
+    "languages": [{}],
+    "manager": {
+        "id": "1"
+    },
+    "name": "Секретарь",
+    "premium": true,
+    "previous_id": "123456",
+    "professional_roles": [{}],
+    "published_at": "2013-07-08T16:17:21+0400",
+    "response_letter_required": true,
+    "response_notifications": true,
+    "response_url": None,
+    "salary": {
+        "currency": "RUR",
+        "from": 30000,
+        "gross": true,
+        "to": None
+    },
+    "schedule": {
+        "id": "fullDay",
+        "name": "Полный день"
+    },
+    "test": {
+        "required": false
+    },
+    "type": {
+        "id": "open",
+        "name": "Открытая"
+    },
+    "video_vacancy": {
+        "cover_picture": {},
+        "video_url": "https://host/video/123"
+    },
+    "working_days": [{}],
+    "working_time_intervals": [{}],
+    "working_time_modes": [{}]
+}
 
-    st.write("---")
+    st.write("""
+### `Пример ответа по поиску вакансий:`:
+""")
+    json_str1 = json.dumps(data, indent=4, ensure_ascii=False)
+
+    st.write(f"```json\n{json_str1}\n```")
+
+    
+    
 
     st.write("""
     ### `Просмотр резюме:`:
@@ -435,6 +554,11 @@ def main():
 }
 
     json_str = json.dumps(data, indent=4, ensure_ascii=False)
+
+    st.write("""
+### `Пример ответа по поиску резюме:`:
+""")
+
 
     st.write(f"```json\n{json_str}\n```")
 
