@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 
 html_code = '''
 <div style="text-align: center;">
@@ -310,9 +311,132 @@ def main():
     """)
 
 
+    data = {
+    "_progress": {
+        "mandatory": [],
+        "percentage": 55,
+        "recommended": []
+    },
+    "access": {
+        "type": {}
+    },
+    "actions": {
+        "download": {}
+    },
+    "age": None,
+    "alternate_url": "https://hh.ru/resume/ca9fb415848",
+    "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+    },
+    "birth_date": None,
+    "blocked": False,
+    "business_trip_readiness": {
+        "id": "never",
+        "name": "не готов к командировкам"
+    },
+    "can_publish_or_update": False,
+    "certificate": [],
+    "citizenship": [{}],
+    "contact": [{}, {}],
+    "created_at": "2023-05-25T14:19:02+0300",
+    "creds": {
+        "answers": {},
+        "question_to_answer_map": {},
+        "questions": {}
+    },
+    "download": {
+        "pdf": {},
+        "rtf": {}
+    },
+    "driver_license_types": [],
+    "education": {
+        "additional": [],
+        "attestation": [],
+        "elementary": [],
+        "level": {},
+        "primary": []
+    },
+    "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+    },
+    "employments": [{}],
+    "experience": [{}],
+    "finished": True,
+    "first_name": "Иван",
+    "gender": {
+        "id": "male",
+        "name": "Мужской"
+    },
+    "has_vehicle": None,
+    "hidden_fields": [],
+    "id": "ca9fb415848",
+    "language": [{}],
+    "last_name": "Иванов",
+    "metro": None,
+    "middle_name": None,
+    "moderation_note": [],
+    "new_views": 0,
+    "next_publish_at": "2023-05-25T18:19:03+0300",
+    "paid_services": [{}, {}],
+    "photo": None,
+    "platform": {
+        "id": "headhunter"
+    },
+    "portfolio": [],
+    "professional_roles": [{}],
+    "progress": {
+        "mandatory": [],
+        "percentage": 55,
+        "recommended": []
+    },
+    "publish_url": "https://api.hh.ru/resumes/ca9fb415848/publish",
+    "recommendation": [],
+    "relocation": {
+        "area": [],
+        "district": [],
+        "type": {}
+    },
+    "resume_locale": {
+        "id": "RU",
+        "name": "Русский"
+    },
+    "salary": {
+        "amount": 10000,
+        "currency": "USD"
+    },
+    "schedule": {
+        "id": "fullDay",
+        "name": "Полный день"
+    },
+    "schedules": [{}],
+    "site": [],
+    "skill_set": [],
+    "skills": "Руководство большой командой",
+    "status": {
+        "id": "published",
+        "name": "опубликовано"
+    },
+    "tags": [{}],
+    "title": "API Test Resume",
+    "total_experience": {
+        "months": 14
+    },
+    "total_views": 0,
+    "travel_time": {
+        "id": "any",
+        "name": "Не имеет значения"
+    },
+    "updated_at": "2023-05-25T14:19:03+0300",
+    "views_url": "https://api.hh.ru/resumes/ca9fb415848/views",
+    "work_ticket": []
+}
 
+    json_str = json.dumps(data, indent=4, ensure_ascii=False)
 
-
+    st.write(f"```json\n{json_str}\n```")
 
 
 
